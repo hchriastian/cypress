@@ -11,15 +11,15 @@ context('Actions', () => {
         .type('kandidat@paper.id')
 
       cy.get('.auth-form__submit-btn')
-        .click({ force: true })
+        .click()
 
       cy.get('.auth-mb-10')
         .type('jakarta123')
 
-      cy.get('.auth-form__submit-btn')
+        cy.get('.auth-form__submit-btn')
         .click({ force: true })
        
 
-
+     
     })
 })
